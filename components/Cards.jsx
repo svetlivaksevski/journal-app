@@ -5,13 +5,11 @@ import star from "../star.svg";
 export default function Cards() {
   return (
     <>
-      <div className="favorites">
-        <p>
-          All entries <span className="spanone">3</span>
-        </p>
-        <p>
-          Favorites <span className="spantwo">1</span>
-        </p>
+      <div className="nav">
+        <span className="category category--selected"> All entries</span>
+        <span className="count count--selected"> 3 </span>
+        <span className="category"> Favorites</span>
+        <span className="count"> 1 </span>
       </div>
       <section className="card">
         <p className="dates"> MARCH 03,2024</p>

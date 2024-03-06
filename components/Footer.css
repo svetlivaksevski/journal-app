@@ -1,6 +1,8 @@
+@import "../src/index.css";
+
 .footer {
-  background: #252629;
-  color: #ffffff;
+  background: var(--color-granite);
+  color: var(--color-foam);
   justify-content: center;
   align-items: center;
   display: flex;

@@ -1,3 +1,5 @@
+@import "../src/index.css";
+
 .submit_button {
   align-self: center;
 }
@@ -8,20 +10,20 @@
 }
 
 .formstyle {
-  margin: 5px auto;
-  max-width: 600px;
   padding: 30px;
-  color: #252629;
+  margin: 5px auto;
+  color: var(--color-granite);
   gap: 10px;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .button {
   margin-top: 0.4rem;
-  background-color: #ff5c29;
-  color: #ffffff;
+  background-color: var(--color-nemo);
+  color: var(--color-foam);
   padding: 20px;
   width: 120px;
   border-radius: 5px;
@@ -29,15 +31,20 @@
 }
 
 .inputone {
-  border: 1px solid #e4e8f0;
+  border: 1px solid var(--color-water-10);
   border-radius: 5px;
   width: 600px;
   height: 50px;
 }
 
 .inputtwo {
-  border: 1px solid #e4e8f0;
+  border: 1px solid var(--color-water-10);
   border-radius: 5px;
   width: 600px;
   height: 150px;
+}
+
+label {
+  display: flex;
+  text-align: left;
 }

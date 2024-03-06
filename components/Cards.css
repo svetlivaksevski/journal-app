@@ -1,7 +1,9 @@
+@import "../src/index.css";
+
 .card {
   border: 5px;
-  background-color: #ffffff;
-  color: #252629;
+  background-color: var(--color-foam);
+  color: var(--color-granite);
   padding: 30px;
   border-radius: 10px;
   position: relative;
@@ -38,18 +40,34 @@
   justify-content: space-between;
 }
 
-.favorites {
+.category {
   display: flex;
   justify-content: space-around;
-  color: #ff5c29;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-.spanone {
+.category--selected {
+  display: flex;
+  justify-content: space-around;
+  color: var(--color-nemo-mid);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.count {
   border-radius: 20px;
-  background-color: #ff5c29;
-  color: #ffffff;
-  padding: 5px;
+  background-color: var(--color-water-10);
+  color: var(--color-granite);
+  padding: 5px 20px;
 }
 
-.spantwo {
+.count--selected {
+  background-color: var(--color-nemo-mid);
+  color: var(--color-foam);
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }

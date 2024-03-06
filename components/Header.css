@@ -1,9 +1,11 @@
+@import "../src/index.css";
+
 Header {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #e4e8f0;
+  background-color: var(--color-water-10);
   text-align: center;
   z-index: 100;
 }
