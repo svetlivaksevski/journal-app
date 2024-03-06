@@ -1,0 +1,55 @@
+.card {
+  border: 5px;
+  background-color: #ffffff;
+  color: #252629;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card__heading {
+  margin: 0 0 10px 0;
+}
+
+.bmimg {
+  position: relative;
+  top: -10px;
+  right: 20px;
+  width: 30px;
+  height: auto;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dots {
+  width: 100%;
+  border-bottom: 1px solid #e4e8f0;
+}
+
+.startandtext {
+  display: flex;
+  justify-content: space-between;
+}
+
+.favorites {
+  display: flex;
+  justify-content: space-around;
+  color: #ff5c29;
+}
+
+.spanone {
+  border-radius: 20px;
+  background-color: #ff5c29;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.spantwo {
+}
