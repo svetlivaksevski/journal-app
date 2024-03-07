@@ -1,23 +1,18 @@
 @import "../src/index.css";
 
-.submit_button {
-  align-self: center;
-}
-
 .title {
   justify-content: space-around;
   display: flex;
 }
 
-.formstyle {
+.container {
   padding: 30px;
   margin: 5px auto;
   color: var(--color-granite);
-  gap: 10px;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  max-width: 600px;
 }
 
 .button {
@@ -30,21 +25,30 @@
   border: none;
 }
 
-.inputone {
+.submit_button {
+  align-self: center;
+}
+
+.inputstyle {
   border: 1px solid var(--color-water-10);
   border-radius: 5px;
-  width: 600px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+input {
   height: 50px;
 }
 
-.inputtwo {
-  border: 1px solid var(--color-water-10);
-  border-radius: 5px;
-  width: 600px;
-  height: 150px;
-}
-
 label {
-  display: flex;
-  text-align: left;
+  padding: 10px;
+  padding-left: 0;
 }

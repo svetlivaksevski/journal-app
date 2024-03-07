@@ -1,31 +1,27 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import starfilled from "../star-filled.svg";
 import star from "../star.svg";
 
-export default function Card() {
+export default function Card({ entry }) {
   const [liked, setLiked] = useState(false);
 
   function toggleLiked() {
     setLiked(!liked);
   }
 
-  console.log(123);
   return (
-    <section className="card">
-      <p className="dates"> MARCH 03,2024</p>
-      <div className="startandtext">
-        <h2 className="card__heading">"That's life in the city" </h2>
+    <div className="card">
+      <p className="date"> {entry.date}</p>
+      <div className="inline">
+        <h2 className="motto">{entry.motto} </h2>
         <img
           onClick={toggleLiked}
           src={liked ? starfilled : star}
-          className="bmimg"
+          className="stars"
+          alt="Star"
         ></img>
       </div>
-      <p class="hidden_answer">
-        Si sine causa? quae fuerit causa, mox videro; interea hoc tenebo, si
-        mihi. Et quidem se repellere, idque instituit decere sic omne animal,
-        simul atque.
-      </p>
-    </section>
+      <p>{entry.notes}</p>
+    </div>
   );
 }
