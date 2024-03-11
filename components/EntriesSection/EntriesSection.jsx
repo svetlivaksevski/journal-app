@@ -2,6 +2,7 @@ import React from "react";
 import starfilled from "../../star-filled.svg";
 import star from "../../star.svg";
 import "./Cards.css";
+import "./Badge.css";
 
 export default function EntriesSection({
   entries,
