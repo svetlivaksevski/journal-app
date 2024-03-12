@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import useLocalStorageState from "use-local-storage-state";
 import EntriesSection from "../components/EntriesSection/EntriesSection.jsx";
 import Form from "../components/Form/Form.jsx";
 import Header from "../components/Header/Header.jsx";
@@ -38,8 +39,12 @@ const initialEntries = [
 ];
 
 export default function App() {
-  const [entries, setEntries] = useState(initialEntries);
-  const [filter, setFilter] = useState("all");
+  const [entries, setEntries] = useLocalStorageState("entries", {
+    defaultValue: initialEntries,
+  });
+  const [filter, setFilter] = useLocalStorageState("filter", {
+    defaultValue: "all",
+  });
 
   function handleAddEntry(newEntry) {
     const date = new Date().toLocaleDateString("en-us", {
